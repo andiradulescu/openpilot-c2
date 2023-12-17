@@ -96,6 +96,9 @@ procs = [
   # PythonProcess("deleter", "selfdrive.loggerd.deleter", offroad=True),
   # PythonProcess("uploader", "selfdrive.loggerd.uploader", offroad=True),
   # PythonProcess("logmessaged", "system.logmessaged", offroad=True),
+
+  # fleet manager
+  PythonProcess("fleet_manager", "selfdrive.frogpilot.fleetmanager.fleet_manager", always_run),
 ]
 
 managed_processes = {p.name: p for p in procs}
