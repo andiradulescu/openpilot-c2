@@ -12,11 +12,11 @@ from tools.lib.route import SegmentName
 
 # path to openpilot screen recordings and error logs
 if PC:
-  SCREENRECORD_PATH = os.path.join(str(Path.home()), ".comma", "media", "0", "videos", "")
-  ERROR_LOGS_PATH = os.path.join(str(Path.home()), ".comma", "community", "crashes", "")
+  SCREENRECORD_PATH = os.path.join(str(Path.home()), ".comma", "media", "0", "realdata", "")
+  ERROR_LOGS_PATH = os.path.join(str(Path.home()), ".comma", "media", "0", "crash_logs", "")
 else:
-  SCREENRECORD_PATH = "/data/media/0/videos/"
-  ERROR_LOGS_PATH = "/data/community/crashes/"
+  SCREENRECORD_PATH = "/data/media/0/realdata/"
+  ERROR_LOGS_PATH = "/data/media/0/crash_logs/"
 
 
 def list_files(path):
